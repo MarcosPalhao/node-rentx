@@ -33,6 +33,8 @@ describe("Create category Controller", () => {
 
         const {token} = responseToken.body;
 
+        console.log(token);
+
         const response = await request(app).post("/categories").send({
             name: "Category supertest",
             description: "Category supertest"
