@@ -13,7 +13,7 @@ interface IPayload {
 interface ITokenResponse {
     token: string;
     refresh_token: string;
-  }
+}
 
 @injectable()
 class RefreshTokenUseCase {
